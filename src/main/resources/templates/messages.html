@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>messages</title>
+<script th:src="@{/js/utils.js}"></script>
+</head>
+<body>
+<!-- 비어 있는 messages div -->
+ <h1>Message List</h1>
+ <div id="loading_id" class="loading">Loading...</div>
+ <div id= "error_id" class="error">fetching 과정에서 오류 발생</div>
+ <ul id=" messageList_id"></ul>
+ 
+ <!-- 자바스크립트로 fetch를 이ㅛㅇ해 /messages/api 결롸글 위 div에 담는다  -->
+ <script th:src="@{/js/fetch-messages.js}"></script>
+</body>
+</html>
